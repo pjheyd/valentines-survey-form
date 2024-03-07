@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="heart-beating float-left"></span><span class="heart-beating float-right"></span>
+      <h1 id="title">Valentine's Day Survey Form</h1>
+      <p id="description">This Valentine's Day questionnaire helps you better prepare for the day.<p>
+    </header>
+    <form id="survey-form">
+      <fieldset class="personal-info">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="name" required placeholder="Enter your email" />
+        <label for="number">Age</label>
+        <input type="number" id="number" name="age" min="10" max="99" placeholder="Age" />
+      </fieldset>
+
+      <fieldset class="options">
+        <label for="dropdown">Sex</label>
+        <select id="dropdown" name="sex">
+            <option selected value disabled>Select an option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="notSay">Prefer not to say</option>
+        </select>
+
+        <label for="radio">What is your relationship status?</label>
+        <div class="radio-container">
+
+          <div class="radio-div">
+            <input type="radio" id="radio1" class="radio-input" name="options" value="option1" /> 
+            <label for="radio1" class="radio-lbl">
+              <span class="radio"></span>
+              <span>Single</span>
+            </label>
+          </div>
+          
+          <div class="radio-div">
+            <input type="radio" id="radio2" class="radio-input" name="options" value="option2" />
+            <label for="radio2" class="radio-lbl">
+              <span class="radio"></span>
+              <span>Committed</span>
+            </label>
+          </div>
+          
+          <div class="radio-div">
+            <input type="radio" id="radio3" class="radio-input" name="options" value="option3" /> 
+            <label for="radio3" class="radio-lbl">
+              <span class="radio"></span>
+              <span>Married</span>
+            </label>
+          </div>
+          
+          <div class="radio-div">
+            <input type="radio" id="radio4" class="radio-input" name="options" value="option4" /> 
+            <label for="radio4" class="radio-lbl">
+              <span class="radio"></span>
+              <span>Divorced</span>
+            </label>
+          </div>
+          
+          <div class="radio-div">
+            <input type="radio" id="radio5" class="radio-input" name="options" value="option5" /> 
+            <label for="radio5" class="radio-lbl">
+              <span class="radio"></span>
+              <span>Widowed</span>
+            </label>
+          </div>
+          
+          <div class="radio-div">
+            <input type="radio" id="radio6" class="radio-input" name="options" value="option6" />
+            <label for="radio6" class="radio-lbl">
+              <span class="radio"></span>
+              <span>Other</span>
+            </label>
+          </div>
+          
+        </div>
+          
+
+        <label>How do you feel on the Valentine's Day?</label>
+          <select id="favorite-feature" name="favorite-feature">
+            <option disabled selected value>Select an option</option>
+            <option value="much-worse">Much worse</option>
+            <option value="somewhat-worse">Somewhat worse</option>
+            <option value="same">About the same</option>
+            <option value="somewhat-better">Somewhat better</option>
+            <option value="much-better">Much better</option>
+          </select>
+
+           
+        <label>Which is the most important quality you look for when choosing a significant partner?</label>
+        <div class="checkbox-container">
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx1" type="checkbox" name="good-looks" value="good-looks">
+            <label class="cbx-lbl" for="cbx1">
+              <span class="cbx"></span><span class="cbx-desc">Good looks</span>
+            </label>
+          </div>
+
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx4" type="checkbox" name="shared-interests" value="shared-interests">
+            <label class="cbx-lbl" for="cbx4">
+              <span class="cbx"></span><span class="cbx-desc">Shared interests</span>
+            </label>
+          </div>
+
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx5" type="checkbox" name="intelligence" value="intelligence">
+            <label class="cbx-lbl" for="cbx5">
+              <span class="cbx"></span><span class="cbx-desc">Intelligence</span>
+            </label>
+          </div>
+          
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx6" type="checkbox" name="money" value="money">
+            <label class="cbx-lbl" for="cbx6">
+              <span class="cbx"></span><span class="cbx-desc">Money</span>
+            </label>
+          </div>
+          
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx7" type="checkbox" name="humor" value="humor">
+            <label class="cbx-lbl" for="cbx7">
+              <span class="cbx"></span><span class="cbx-desc">Humor</span>
+            </label>
+          </div>
+          
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx8" type="checkbox" name="sensitivity" value="sensitivity">
+            <label class="cbx-lbl" for="cbx8">
+              <span class="cbx"></span><span class="cbx-desc">Sensitivity</span>
+            </label>
+          </div>
+          
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx9" type="checkbox" name="romance" value="romance">
+            <label class="cbx-lbl" for="cbx9">
+              <span class="cbx"></span><span class="cbx-desc">Romance</span>
+            </label>
+          </div>
+          
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx2" type="checkbox" name="friendship" value="friendship">
+            <label class="cbx-lbl" for="cbx2">
+              <span class="cbx"></span><span class="cbx-desc">Friendship</span>
+            </label>
+          </div>
+          
+          <div class="cbx-div">
+            <input class="hidden-xs-up cbx-input" id="cbx3" type="checkbox" name="other1" value="other1">
+            <label class="cbx-lbl" for="cbx3">
+              <span class="cbx"></span><span class="cbx-desc">Other</span>
+            </label>
+          </div>
+          
+        </div>
+
+        <label>Do you think Valentines Day is the best day of the year to get engaged?</label>
+          <select id="bestday" name="bestday">
+            <option selected disabled>Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="maybe">Maybe</option>
+          </select>
+        
+      </fieldset>
+
+      <fieldset class="improve">
+        <label for="expectations">How do you expect this Valentines Day to be?</label>
+        <textarea id="expectations" name="comments" rows="5" placeholder="Enter your expectation here..."></textarea>
+      </fieldset>
+      
+      <fieldset>
+        <button>Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
