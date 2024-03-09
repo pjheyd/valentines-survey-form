@@ -18,11 +18,17 @@
   src: url(./RobotoMono-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: 'Comfortaa';
+  font-display: swap;
+  src: url(./Comfortaa-VariableFont_wght.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Comfortaa', 'Roboto Mono', monospace;
 }
 
 body::before {
@@ -154,13 +160,12 @@ header {
 }
 
 #title {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'font2', 'Dancing Script', cursive;
   font-size: 35px;
   letter-spacing: 3px;
 }
 
 #description {
-  font-style: italic;
   font-size: 20px;
   margin-top: 10px;
   letter-spacing: 3px;
