@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: 'Comfortaa', 'Roboto Mono', monospace;
+  font-family: 'Comfortaa';
 }
 
 body::before {
@@ -160,7 +160,7 @@ header {
 }
 
 #title {
-  font-family: 'font2', 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 35px;
   letter-spacing: 3px;
 }
