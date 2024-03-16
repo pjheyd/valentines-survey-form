@@ -24,10 +24,14 @@
   src: url(./Comfortaa-VariableFont_wght.ttf);
 }
 
+:root {
+  --theColor: #e91f64;
+}
+
 body {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #000;
   font-family: "Comfortaa", sans-serif;
 }
 
@@ -39,7 +43,9 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);;
+  /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  /* background-color: #fee5f0; */
 }
 
 /* CONTAINER */
@@ -112,7 +118,7 @@ header {
 .heart-beating:before,
 .heart-beating:after {
   content: "";
-  background: #8BE8CB;
+  background: var(--theColor);
   width: 40px;
   height: 60px;
   border-radius: 50px 50px 0 0;
@@ -241,7 +247,7 @@ select {
 }
 
 option {
-  background-color: #8BE8CB;
+  background-color: var(--theColor);
 }
 
 /* RADIO */
@@ -272,7 +278,6 @@ option {
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  color: #fff;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
 }
@@ -281,24 +286,25 @@ option {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid #555;
+  border: 2px solid #fee5f0;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .radio-input:checked + .radio-lbl .radio {
   transform: scale(0.9);
-  border: 5px solid #8BE8CB;
-  color: #8BE8CB;
+  border: 5px solid var(--theColor);
+  color: var(--theColor);
 }
 
 .radio-input:checked + .radio-lbl {
-  color: #8BE8CB;
+  color: var(--theColor);
+  font-weight: 900;
 }
 
 .radio-lbl:hover .radio {
   transform: scale(1.2);
-  border-color: #8BE8CB;
-  box-shadow: 0 0 10px #8BE8CB;
+  border-color: var(--theColor);
+  box-shadow: 0 0 10px var(--theColor);
 }
 
 /* CHECKBOX */
@@ -332,7 +338,7 @@ option {
   width: 25px;
   height: 25px;
   margin-bottom: 0;
-  border: 2px solid #555;
+  border: 2px solid #fee5f0;
   border-radius: 10px;
   transition: background 0.2s ease;
   cursor: pointer;
@@ -349,15 +355,15 @@ option {
   height: 14px;
   opacity: 0;
   transform: rotate(45deg) scale(0);
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid #fee5f0;
+  border-bottom: 2px solid #fee5f0;
   transition: all 0.3s ease;
   transition-delay: 0.15s;
 }
 
 .cbx-input:checked + .cbx-lbl .cbx {
   border-color: transparent;
-  background: #8BE8CB;
+  background: var(--theColor);
   animation: jelly 0.4s ease;
 }
 
@@ -367,13 +373,14 @@ option {
 }
 
 .cbx-input:checked + .cbx-lbl {
-  color: #8BE8CB;
+  color: var(--theColor);
+  font-weight: 900;
 }
 
 .cbx-lbl:hover .cbx {
   transform: scale(1);
-  border-color: #8BE8CB;
-  box-shadow: 0 0 10px #8BE8CB;
+  border-color: var(--theColor);
+  box-shadow: 0 0 10px var(--theColor);
 }
 
 @keyframes jelly {
@@ -451,9 +458,10 @@ button {
 
 @media only screen and (min-width: 576px) {
   button:hover {
-    background-color: #8BE8CB;
+    background-color: var(--theColor);
     box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
     transform: translateY(-7px);
+    color: #fee5f0;
   }
   
   button:active {
