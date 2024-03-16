@@ -297,8 +297,8 @@ option {
 }
 
 .radio-input:checked + .radio-lbl {
-  color: var(--theColor);
-  font-weight: 900;
+  /* color: var(--theColor); */
+  font-weight: 700;
 }
 
 .radio-lbl:hover .radio {
@@ -373,8 +373,8 @@ option {
 }
 
 .cbx-input:checked + .cbx-lbl {
-  color: var(--theColor);
-  font-weight: 900;
+  /* color: var(--theColor); */
+  font-weight: 700;
 }
 
 .cbx-lbl:hover .cbx {
